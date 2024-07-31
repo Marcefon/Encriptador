@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="shortcut icon" href="img/Favicon.svg" type="image/x-icon"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body class="body">
+  
+    <section class="encriptador">
+        <div class="bloquelogo">
+            <img class="Logo" src="/img/Logo.svg" alt="Logo de alura">
+        </div>
+
+        <div class="bloque"> 
+            <input type="text" id="texto" placeholder="Ingrese el texto aqui"> 
+            <div class="bloque__inferior">
+                <div id="condicion" class="condicion">
+                    <img id="condicion_icono" class="alert" src="/img/icono.svg" >
+                    <p id="condicion_texto"> Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="Botones">
+                    <button id="boton1" onclick="encriptarTexto()" class="Encriptar">Encriptar</button>
+                    <button id="boton2" onclick="desencriptarTexto()" class="Desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="textoEncriptado" class="contenedor"> 
+            <textarea type="mensaje" id="evaluarTexto" class="evaluar"></textarea>
+            <div id="graficas" class="grafica"> 
+                <div id="contenedorMuñeco" class="contenedor__muñeco">
+                    <img id="muñeco" src="./img/ilustracion-1.svg" alt="Ilustracion"> </div>
+                <div class="contenedor__textos"> 
+                    <h2 id="titulo"> Ningún mensaje fue encontrado</h2>
+                    <p id="parrafo" class="contenedor_parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="botones_contenedor">
+            <button onclick="copiar()" class="Copiar" id="btnCopiar">Copiar</button>
+            <button onclick="limpiar()" class="limpiar" id="btnLimpiar">Reiniciar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a class="enlace" href="https://github.com/Marcefon" target="_blank">
+            <img class="icono" src="./img/Github.svg"></a>
+        <p class="footer">Desarrollado por Marcela Fonseca</p>
+    </footer>
+
+
+    <script src="app.js"> </script>
+
+</body>
+</html>
