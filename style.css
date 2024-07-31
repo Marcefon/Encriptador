@@ -264,12 +264,14 @@ body.swal2-height-auto {
 @media (max-width:768px){
 
     body {
-        background-position: center;
+        background-size: cover;
+        height: 100% !important;
     }
     
     .encriptador {
         flex-direction: column;
         row-gap: 70px;
+        height: auto;
     }
     
     .bloquelogo {
